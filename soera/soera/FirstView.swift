@@ -15,7 +15,6 @@ struct FirstView: View {
             ZStack{
                 Image("bg")
                     .resizable()
-                    .scaledToFit()
                     .ignoresSafeArea()
                 VStack{
                     ZStack{
@@ -23,15 +22,20 @@ struct FirstView: View {
                         Image("Rect")
                             .frame(maxWidth:.infinity, alignment:.topTrailing)
                             .ignoresSafeArea()
-                        TextField("ادخل اسمك هنا..", text:$name)
-                            .frame(width:230, alignment:.topTrailing)
-                            .padding(20)
-                        Text("اهلاً بك \(name)! 👋🏻")
-                            .font(.largeTitle)
-                            .fontWeight(.semibold)
-                            .foregroundColor(Color("Color"))
-                            .frame(maxWidth:.infinity, alignment:.topTrailing)
-                            .padding(20)
+                        VStack{
+                            Text("اهلاً بك \(name)! 👋🏻")
+                                .font(.largeTitle)
+                                .fontWeight(.semibold)
+                                .foregroundColor(Color("Color"))
+                                .frame(maxWidth:.infinity, alignment:.topTrailing)
+                                .padding(20)
+                            HStack{
+                                Spacer()
+                                TextField("ادخل اسمك هنا..", text:$name)
+                                    .frame(width:130, alignment:.topLeading)
+                                    .padding(0)
+                            }
+                        }
                     }
                     Text("ماهو هدفك؟")
                         .font(.title)
@@ -42,7 +46,6 @@ struct FirstView: View {
                     
                     VStack{
                         NavigationLink(destination: view2()){
-                            //                        MyButton(action: {}) {
                             Text("انقاص الوزن")
                                 .font(.title2)
                                 .fontWeight(.regular)
@@ -52,16 +55,7 @@ struct FirstView: View {
                                 .foregroundColor(Color("tex"))
                                 .cornerRadius(20)
                                 .padding(.horizontal, 20)
-                            //                                           }
                         }
-                        //                    MyButton(action: {}) {
-                        //                        Text("انقاص الوزن")
-                        //                            .font(.title2)
-                        //                            .fontWeight(.regular)
-                        //                    }
-                        //                    Button(action: {print("ok")}) {
-                        //                        Spacer()
-                        //                    }
                         MyButton(action: {}) {
                             Text("لياقة بدنية - قريباً")
                                 .font(.title2)
