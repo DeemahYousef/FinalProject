@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct Mainp: View {
-  @State var cal:Double = 0
+    @State var cal:Double = 0
+    @Binding var result:Int 
+    let Meals = ["الفطور🍳","الغداء🍛","تصبيرة🍎","العشاء🌯"]
     var body: some View {
         ZStack{
             Image("bg2")
@@ -21,13 +23,14 @@ struct Mainp: View {
                     .foregroundColor(Color("Color"))
                     .frame(maxWidth:.infinity, alignment:.topTrailing)
                     .padding(20)
+                Text("\(result)")
                 ZStack{
-                Image("Rectangle 9")
-                    .resizable()
-                    .scaledToFit()
-                    .padding()
-                Slider(value: $cal, in: 0...3000)
-                    .frame(width: 300,alignment: .center)
+                    Image("Rectangle 9")
+                        .resizable()
+                        .scaledToFit()
+                        .padding()
+                    Slider(value: $cal, in: 0...3000)
+                        .frame(width: 300,alignment: .center)
                 }
                 ZStack{
                     Image("Rectangle 10")
@@ -35,14 +38,23 @@ struct Mainp: View {
                         .padding()
                         .ignoresSafeArea()
                     Spacer()
+                    List(Meals , id:\.self){ item in
+                        Text(item)
+                    }
                 }
             }
         }
+        .onAppear(perform: getr)
+    }
+    func getr (){
+        print(result)
     }
 }
 
-struct Mainp_Previews: PreviewProvider {
-    static var previews: some View {
-        Mainp()
-    }
-}
+
+//struct Mainp_Previews: PreviewProvider {
+//    @State var r = 0
+//    static var previews: some View {
+//        Mainp(result: $r)
+//    }
+//}

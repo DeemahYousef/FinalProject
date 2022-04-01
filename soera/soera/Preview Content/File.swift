@@ -12,7 +12,7 @@ class BMRcalculator{
     var length:Double = 0.0
     var weight:Double = 0.0
 }
-func getBMR(weight:Double, height:Double, age:Int, gender: String)->Int{
+func getBMR(weight:String, height:String, age:String, gender: Int)->Int{
     
     var BMR = 0.0
     var weightCalculation = 0.0
@@ -20,10 +20,10 @@ func getBMR(weight:Double, height:Double, age:Int, gender: String)->Int{
     var ageCalculaition = 0.0
     
     //If Gender is Male, use the following formula: BMR=66.47+ (13.75 x W) + (5.0 x H) - (6.75 x A)
-    if gender == ("ذكر") {
-        weightCalculation = 13.75 * (weight)
-        heightCalculation = 5.0 * (height)
-        ageCalculaition = 6.75 * Double(age)
+    if gender == 0 {
+        weightCalculation = 13.75 * (Double(weight) ?? 0)
+        heightCalculation = 5.0 * (Double(height) ?? 0)
+        ageCalculaition = 6.75 * (Double(age) ?? 0)
         
         BMR = 66.47 + weightCalculation  + heightCalculation - ageCalculaition
         
@@ -31,9 +31,9 @@ func getBMR(weight:Double, height:Double, age:Int, gender: String)->Int{
     }
     //Else Gender is Female, use the following formula: BMR=665.09 + (9.56 x W) + (1.84 x H) - (4.67 x A)
     else{
-        weightCalculation = 9.56 * (weight)
-        heightCalculation = 1.84 * (height)
-        ageCalculaition = 4.67 * Double(age)
+        weightCalculation = 9.56 * (Double(weight) ?? 0)
+        heightCalculation = 1.84 * (Double(height) ?? 0)
+        ageCalculaition = 4.67 * (Double(age) ?? 0)
         
         BMR =  665.09 + weightCalculation + heightCalculation - ageCalculaition
         

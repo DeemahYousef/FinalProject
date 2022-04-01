@@ -19,6 +19,7 @@ struct FirstView: View {
                     .ignoresSafeArea()
                 VStack{
                     ZStack{
+                        
                         Image("Rect")
                             .frame(maxWidth:.infinity, alignment:.topTrailing)
                             .ignoresSafeArea()

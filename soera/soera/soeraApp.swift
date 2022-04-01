@@ -11,7 +11,7 @@ import SwiftUI
 struct soeraApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FirstView()
         }
     }
 }

@@ -11,7 +11,6 @@
 		EE0A6B7427F2844C00667256 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0A6B7327F2844C00667256 /* CustomButton.swift */; };
 		EE1FD4D827F4AC8E00AC07EC /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1FD4D727F4AC8E00AC07EC /* File.swift */; };
 		EE3E32A727F08440009A4758 /* soeraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E32A627F08440009A4758 /* soeraApp.swift */; };
-		EE3E32A927F08440009A4758 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E32A827F08440009A4758 /* ContentView.swift */; };
 		EE3E32AB27F08445009A4758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3E32AA27F08445009A4758 /* Assets.xcassets */; };
 		EE3E32AE27F08445009A4758 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE3E32AD27F08445009A4758 /* Preview Assets.xcassets */; };
 		EE3E32B727F0A310009A4758 /* Detailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E32B627F0A310009A4758 /* Detailview.swift */; };
@@ -25,7 +24,6 @@
 		EE1FD4D727F4AC8E00AC07EC /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		EE3E32A327F08440009A4758 /* soera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = soera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE3E32A627F08440009A4758 /* soeraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soeraApp.swift; sourceTree = "<group>"; };
-		EE3E32A827F08440009A4758 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EE3E32AA27F08445009A4758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EE3E32AD27F08445009A4758 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		EE3E32B627F0A310009A4758 /* Detailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detailview.swift; sourceTree = "<group>"; };
@@ -95,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				EE3E32A627F08440009A4758 /* soeraApp.swift */,
-				EE3E32A827F08440009A4758 /* ContentView.swift */,
 				EE3E32AA27F08445009A4758 /* Assets.xcassets */,
 				EE0A6B6A27F2429700667256 /* screens */,
 				EE3E32AC27F08445009A4758 /* Preview Content */,
@@ -181,7 +178,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE3E32A927F08440009A4758 /* ContentView.swift in Sources */,
 				EE56C82427F3CC1800BCD716 /* FirstView.swift in Sources */,
 				EE1FD4D827F4AC8E00AC07EC /* File.swift in Sources */,
 				EE708C6D27F5279900C1CE60 /* Mainp.swift in Sources */,
