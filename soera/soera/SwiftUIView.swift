@@ -85,6 +85,7 @@ struct SwiftUIView: View {
                 }
                 .frame(width: 320, height: 20, alignment: .center)
                 .padding()
+                .foregroundColor(Color("tex"))
                 .background(Color("con"))
                 .cornerRadius(20)
                 .padding(.horizontal, 20)

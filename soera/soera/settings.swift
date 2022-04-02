@@ -31,7 +31,7 @@ struct settings: View {
                                 .scaledToFit()
                                 .frame(width: 50, height: 50, alignment: .center)
                             Text("بياناتك الشخصية")
-                                .font(.title2)
+                                .font(.title3)
                                 .fontWeight(.regular)
                                 .foregroundColor(Color("tex"))
                         }
@@ -51,7 +51,7 @@ struct settings: View {
                                 .scaledToFit()
                                 .frame(width: 50, height: 50, alignment: .center)
                             Text("تقيمك")
-                                .font(.title2)
+                                .font(.title3)
                                 .fontWeight(.regular)
                                 .foregroundColor(Color("tex"))
                         }
@@ -61,6 +61,26 @@ struct settings: View {
                         .cornerRadius(60)
                         .padding(.horizontal, 20)
                     }
+                    
+                }
+                Button(action: {
+                    print("rate")
+                }) {
+                    VStack {
+                        Image("shield")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 50, height: 50, alignment: .center)
+                        Text("الشروط والاحكام")
+                            .font(.title3)
+                            .fontWeight(.regular)
+                            .foregroundColor(Color("tex"))
+                    }
+                    .frame(width: 130, height: 130, alignment: .center)
+                    .padding()
+                    .background(Color("con"))
+                    .cornerRadius(60)
+                    .padding(.horizontal, 20)
                 }
             }
         }

@@ -40,14 +40,14 @@ func getBMR(weight:String, height:String, age:String, gender: Int)->Int{
         return Int(BMR)
     }
 }
-
-//Formula to calculate remaining calories
-func getRemaining(goal: Int, current: Int)->Int{
-    var remaining = goal - current
-    if remaining < 0 {
-        remaining = 0
-    }
-    return remaining
-}
+//
+////Formula to calculate remaining calories
+//func getRemaining(goal: Int, current: Int)->Int{
+//    var remaining = goal - current
+//    if remaining < 0 {
+//        remaining = 0
+//    }
+//    return remaining
+//}
 
 
