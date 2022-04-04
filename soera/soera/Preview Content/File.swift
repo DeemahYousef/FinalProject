@@ -11,14 +11,15 @@ class BMRcalculator{
     var age:Int = 0
     var length:Double = 0.0
     var weight:Double = 0.0
+    
 }
-func getBMR(weight:String, height:String, age:String, gender: Int)->Int{
+func getBMR(weight:String, height:String, age:String, gender: Int, activty:String)->Int{
     
     var BMR = 0.0
     var weightCalculation = 0.0
     var heightCalculation = 0.0
     var ageCalculaition = 0.0
-    
+    let Doubleactivty = Double(activty) ?? 0
     //If Gender is Male, use the following formula: BMR=66.47+ (13.75 x W) + (5.0 x H) - (6.75 x A)
     if gender == 0 {
         weightCalculation = 13.75 * (Double(weight) ?? 0)
@@ -27,7 +28,7 @@ func getBMR(weight:String, height:String, age:String, gender: Int)->Int{
         
         BMR = 66.47 + weightCalculation  + heightCalculation - ageCalculaition
         
-        return Int(BMR)
+        return Int(BMR*Doubleactivty)
     }
     //Else Gender is Female, use the following formula: BMR=665.09 + (9.56 x W) + (1.84 x H) - (4.67 x A)
     else{
@@ -37,7 +38,7 @@ func getBMR(weight:String, height:String, age:String, gender: Int)->Int{
         
         BMR =  665.09 + weightCalculation + heightCalculation - ageCalculaition
         
-        return Int(BMR)
+        return Int(BMR*Doubleactivty)
     }
 }
 //

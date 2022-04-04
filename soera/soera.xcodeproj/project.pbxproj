@@ -16,7 +16,6 @@
 		EE3E32B727F0A310009A4758 /* Detailview.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE3E32B627F0A310009A4758 /* Detailview.swift */; };
 		EE56C82427F3CC1800BCD716 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE56C82327F3CC1800BCD716 /* FirstView.swift */; };
 		EE708C6D27F5279900C1CE60 /* Mainp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE708C6C27F5279900C1CE60 /* Mainp.swift */; };
-		EEC22B6927F7A3A900F8A64B /* settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEC22B6827F7A3A900F8A64B /* settings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		EE3E32B627F0A310009A4758 /* Detailview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detailview.swift; sourceTree = "<group>"; };
 		EE56C82327F3CC1800BCD716 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
 		EE708C6C27F5279900C1CE60 /* Mainp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mainp.swift; sourceTree = "<group>"; };
-		EEC22B6827F7A3A900F8A64B /* settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +49,6 @@
 				EE3E32B627F0A310009A4758 /* Detailview.swift */,
 				EE0A6B7027F2799000667256 /* SwiftUIView.swift */,
 				EE708C6C27F5279900C1CE60 /* Mainp.swift */,
-				EEC22B6827F7A3A900F8A64B /* settings.swift */,
 				EE1FD4D427F4AAFF00AC07EC /* bmr */,
 				EE0A6B7227F283A800667256 /* Button */,
 			);
@@ -183,7 +180,6 @@
 			files = (
 				EE56C82427F3CC1800BCD716 /* FirstView.swift in Sources */,
 				EE1FD4D827F4AC8E00AC07EC /* File.swift in Sources */,
-				EEC22B6927F7A3A900F8A64B /* settings.swift in Sources */,
 				EE708C6D27F5279900C1CE60 /* Mainp.swift in Sources */,
 				EE3E32A727F08440009A4758 /* soeraApp.swift in Sources */,
 				EE0A6B7127F2799100667256 /* SwiftUIView.swift in Sources */,

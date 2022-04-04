@@ -45,7 +45,7 @@ struct FirstView: View {
                         .padding(20)
                     
                     VStack{
-                        NavigationLink(destination: view2()){
+                        NavigationLink(destination: view2(name: name)){
                             Text("انقاص الوزن")
                                 .font(.title2)
                                 .fontWeight(.regular)
@@ -68,7 +68,16 @@ struct FirstView: View {
                 }
             }
             .navigationBarHidden(true)
+//            .navigationBarItems(leading: Button(action
+//                {}, label:{
+//                Image(systemName: "list.bullet")
+//                ,foregroundColor(Color("tex2"))
+//                      }))
+//
+//        }
+        
         }
+        .accentColor(Color("con2"))
     }
 }
 

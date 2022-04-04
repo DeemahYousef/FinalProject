@@ -23,14 +23,20 @@ struct Mainp: View {
                     .foregroundColor(Color("Color"))
                     .frame(maxWidth:.infinity, alignment:.topTrailing)
                     .padding(20)
-                Text("\(result)")
+                //                Text("\(result)")
                 ZStack{
                     Image("Rectangle 9")
                         .resizable()
                         .scaledToFit()
                         .padding()
-                    Slider(value: $cal, in: 0...3000)
-                        .frame(width: 300,alignment: .center)
+                    VStack{
+                        Text("\(result)")
+                            .font(.title)
+                        Text("سُعره")
+                            .font(.title)
+                        Slider(value: $cal, in: 0...3000)
+                            .frame(width: 300,alignment: .center)
+                    }
                 }
                 ZStack{
                     Image("Rectangle 10")
@@ -38,7 +44,7 @@ struct Mainp: View {
                         .padding()
                         .ignoresSafeArea()
                     Spacer()
-                    List(Meals , id:\.self){ item in
+                    ForEach(Meals , id:\.self){ item in
                         Text(item)
                     }
                 }
