@@ -18,7 +18,11 @@ struct SwiftUIView: View {
     @State var activty:String = ""
     var name : String
     @State private var isShowingDetailView = false
-    let Strengths =  ["نشيط جداً","نشيط","نشاط متوسط","كسول"]
+    @State var choose = 0.5
+    @State var choose1 = 0.5
+    @State var choose2 = 0.5
+    @State var choose3 = 0.5
+    
     var body: some View {
         ZStack{
             
@@ -79,7 +83,7 @@ struct SwiftUIView: View {
                         .foregroundColor(Color("tex2"))
                         .frame(maxWidth:.infinity, alignment:.topTrailing)
                         .padding(20)
-              
+                    
                     VStack{
                         HStack{
                             Spacer()
@@ -87,18 +91,22 @@ struct SwiftUIView: View {
                                 .font(.title3)
                                 .frame(width: 150, height: 50)
                                 .background(Color("Color-2"))
+                                .opacity(choose)
                                 .cornerRadius(20)
                                 .onTapGesture {
                                     activty = "1.2"
+                                    choose = 1.0
                                 }
                             
                             Text("قليل النشاط")
                                 .font(.title3)
                                 .frame(width: 150, height: 50)
                                 .background(Color("Color-2"))
+                                .opacity(choose1)
                                 .cornerRadius(20)
                                 .onTapGesture {
                                     activty = "1.375"
+                                    choose1 = 1.0
                                 }
                             Spacer()
                         }
@@ -107,17 +115,21 @@ struct SwiftUIView: View {
                                 .font(.title3)
                                 .frame(width: 150, height: 50)
                                 .background(Color("Color-2"))
+                                .opacity(choose2)
                                 .cornerRadius(20)
                                 .onTapGesture {
                                     activty = "1.55"
+                                    choose2 = 1.0
                                 }
                             Text("نشيط جداً")
                                 .font(.title3)
                                 .frame(width: 150, height: 50)
                                 .background(Color("Color-2"))
+                                .opacity(choose3)
                                 .cornerRadius(20)
                                 .onTapGesture {
                                     activty = "1.9"
+                                    choose3 = 1.0
                                 }
                         }
                     }

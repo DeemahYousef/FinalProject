@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Mainp: View {
     @State var cal:Double = 0
-    @Binding var result:Int 
+    @Binding var result:Int
     let Meals = ["الفطور🍳","الغداء🍛","تصبيرة🍎","العشاء🌯"]
     var body: some View {
         ZStack{
@@ -34,8 +34,7 @@ struct Mainp: View {
                             .font(.title)
                         Text("سُعره")
                             .font(.title)
-                        Slider(value: $cal, in: 0...3000)
-                            .frame(width: 300,alignment: .center)
+                        
                     }
                 }
                 ZStack{
@@ -44,8 +43,12 @@ struct Mainp: View {
                         .padding()
                         .ignoresSafeArea()
                     Spacer()
-                    ForEach(Meals , id:\.self){ item in
-                        Text(item)
+                    VStack {
+                        ForEach(Meals , id:\.self){ item in
+                            Text(item)
+                        }
+                        .padding()
+                        
                     }
                 }
             }
