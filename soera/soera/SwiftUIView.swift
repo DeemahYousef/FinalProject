@@ -57,21 +57,21 @@ struct SwiftUIView: View {
                     HStack{
                         Spacer()
                         TextField("ادخل هنا..", text:$age)
-                            .frame(width: 100)
+                            .frame(width: 80)
                         Text("العمر:")
                             .font(.title3)
                             .padding()
                         Spacer()
-                        TextField("ادخل هنا..", text:$weight)
-                            .frame(width: 100)
+                        TextField("كيلو جرام..", text:$weight)
+                            .frame(width: 80)
                         Text("الوزن:")
                             .font(.title3)
                             .padding()
                     }
                     HStack{
                         Spacer()
-                        TextField("ادخل هنا..", text:$length)
-                            .frame(width: 100)
+                        TextField("سم..", text:$length)
+                            .frame(width: 80)
                         Text("الطول:")
                             .font(.title3)
                             .padding()
@@ -156,7 +156,7 @@ struct SwiftUIView: View {
                     result = getBMR(weight:weight, height: length, age: age, gender: gender, activty: activty)
                     print(result)
                 }) {
-                    Text("احسب")
+                    Text("احسب عدد السعرات")
                         .font(.title2)
                         .fontWeight(.regular)
                     
